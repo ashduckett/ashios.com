@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 300vh;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.transparentOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.centerPiece {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.centerPiece .centerPieceTitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.centerPiece .centerPieceSubTitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18.2px;
+  font-weight: 300;
+  margin: 17px auto;
+  margin-bottom: 36px;
+}
+
+.centerPiece .learnMoreBtn {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1rem 1rem;
+  border: 1px solid white;
+  display: inline-block;
+  transition: all .5s;
+}
+
+.centerPiece .learnMoreBtn:hover {
+  background-color: #E74C3C;
+}
+
+#skillGraphics {
+  background-color: white;
+  padding: 3rem 0;
+}
+
+#skillGraphics .skillBoxContainer {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  padding: 1rem 0;
+  margin: auto;
+}
+
+#skillGraphics .skillBoxContainer .skillBox {
+  height: 100px;
+  width: 100px;
+}
+
+#skillGraphics .skillBoxContainer .skillBox img {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+/*
+<section class="webDevelopmentContainer">
+        <div class="webDevelopment">
+            <div class="leftSide">
+                <h2>Web Development</h2>
+                <p>Here is some text.</p>
+            </div>
+        </div>
+    </section>
+*/
+.webDevelopmentContainer .webDevelopment {
+  width: 60%;
+  margin: auto;
+}
+
+.webDevelopmentContainer .webDevelopment .webDevelopmentSeparator {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.webDevelopmentContainer .webDevelopment .webDevelopmentSeparator .text, .webDevelopmentContainer .webDevelopment .webDevelopmentSeparator .image {
+  width: 50%;
+}
+
+.webDevelopmentContainer .webDevelopment .webDevelopmentSeparator .image img {
+  width: 100%;
+}
+
+.webDevelopmentContainer .webDevelopment .webDevelopmentSeparator h2 {
+  font-family: 'Raleway', sans-serif;
+  margin: 1rem 0;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.webDevelopmentContainer .webDevelopment .webDevelopmentSeparator p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 16.8px;
+}
+
+.webDevelopmentContainer .webDevelopment .leftSide h2 {
+  font-family: 'Raleway', sans-serif;
+  margin: 1rem 0;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.webDevelopmentContainer .webDevelopment .leftSide p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 16.8px;
+}
+
+.iosDevelopmentContainer {
+  text-align: right;
+}
+
+.iosDevelopmentContainer .iosDevelopment {
+  width: 60%;
+  margin: auto;
+}
+
+.iosDevelopmentContainer .iosDevelopment .rightSide h2 {
+  font-family: 'Raleway', sans-serif;
+  margin: 1rem 0;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.iosDevelopmentContainer .iosDevelopment .rightSide p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 16.8px;
+}
+
+.iOSContainer .text {
+  text-align: right;
+}
+
+.aboutMeStrip {
+  height: 400px;
+  background-color: yellow;
+  width: 100%;
+  margin: auto;
+  background-image: url(../img/dog.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.aboutMeStrip h2 {
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  padding: 35px 0;
+}
+
+.aboutMeStrip p {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 16.8px;
+  color: white;
+}
+
+.aboutMeStrip .aboutCenterPiece {
+  position: relative;
+}
+
+.uncouthSlider {
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+}
+
+.recentWorksStrip .recentWorks {
+  width: 60%;
+  margin: auto;
+}
+
+.recentWorksStrip .recentWorks h2 {
+  color: #666666;
+  font-size: 3em;
+  font-weight: 800;
+  margin: 1em 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.recentWorksStrip .recentWorks p {
+  color: #666666;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.recentWorksButtons {
+  display: flex;
+  justify-content: center;
+  margin: 3em 0;
+}
+
+.recentWorksButtons a {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #464251;
+  font-size: 1.4em;
+  padding: 6px 23px;
+  font-weight: 400;
+  border: 1px solid black;
+  margin: 0 0.5em;
+}
+
+.recentWorksButtons a:hover {
+  background-color: #E74C3C;
+  color: white;
+}
+
+.contactStrip {
+  margin-bottom: 40px;
+}
+
+.contactStrip .contact {
+  width: 60%;
+  margin: auto;
+}
+
+.contactStrip .contact .submitContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contactStrip .contact .submitContainer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 19px;
+  color: white;
+  background-color: #E74C3C;
+  padding: 0.5em 3em 0.5em 2.2em;
+  display: flex;
+  align-items: center;
+}
+
+.contactStrip .contact .submitContainer a i {
+  position: relative;
+  left: 15px;
+  font-size: 30px;
+}
+
+.contactStrip .contact form {
+  display: flex;
+  padding: 40px;
+  justify-content: space-around;
+}
+
+.contactStrip .contact h2 {
+  color: #666666;
+  font-size: 3em;
+  font-weight: 800;
+  margin: 1em 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contactStrip .contact p {
+  color: #666666;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.contactStrip .contact .leftSide {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  justify-content: space-between;
+}
+
+.contactStrip .contact .leftSide input {
+  border-radius: 3px;
+  border: 1px solid #ADADAD;
+  color: #ADADAD;
+  text-indent: 10px;
+  font-weight: 400;
+  outline: none;
+  font-size: 18px;
+  background: none;
+  font-family: 'Raleway', sans-serif;
+  padding: 1.5% 0;
+  width: 100%;
+}
+
+.contactStrip .contact .rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 45%;
+  height: 206px;
+}
+
+.contactStrip .contact .rightSide textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ADADAD;
+  resize: none;
+  border-radius: 3px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-indent: 10px;
+  padding: 1.5% 0;
+  color: #ADADAD;
+}
+
+footer {
+  padding: 3em;
+  background-color: #E74C3C;
+}
